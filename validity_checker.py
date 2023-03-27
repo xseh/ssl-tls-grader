@@ -8,7 +8,7 @@ class Validity():
         self.__certificate = certificate
         self.__total = 0
     
-    def __trust_check(self, file = "CCAD_root_intermediate.csv"):
+    def __trust_check(self, file = "hidden/CCAD_root_intermediate.csv"):
         with open(file, "r", encoding="utf-8", newline='') as fs:
             authorities = csv.DictReader(fs, delimiter = ',', dialect = csv.unix_dialect)
             for authority in authorities:

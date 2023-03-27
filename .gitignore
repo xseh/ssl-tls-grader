@@ -1,7 +1,5 @@
 # Custom files
-CCAD_root_intermediate.csv
-token
-pyvenv.cfg
+hidden/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

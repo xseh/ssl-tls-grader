@@ -78,9 +78,9 @@ class SecurityConfig():
         self.__certificate = certificate
     
     def connect(self):
-        ciphers = "ALL"
         context = ssl.create_default_context()
-        context.set_ciphers(ciphers)
+        context.set_ciphers("ALL")
+        context.set_ciphers('DEFAULT@SECLEVEL=1')
         context.check_hostname = False
         
         self.__connection = context.wrap_socket(
